@@ -10,12 +10,12 @@ $config = array(
     'admin_email' => 'example@example.com',
 
     // Subscription method can be set to: 'file', 'mailchimp' or 'campaignmonitor'
-    'subscription_method' =>  'file',
+    'subscription_method' =>  'mailchimp',
 
     // MailChimp API key and list ID. See documentation for more information
     'mailchimp_config' => array(
-        'api_key'   => 'mailchimp_api_key',
-        'list_id'   => 'mailchimp_list_id'
+        'api_key'   => 'e33873f64647db9d0d659323b8da856c-us8',
+        'list_id'   => '294409831d'
     ),
 
     // CampaignMonitor API key and list ID. See documentation for more information

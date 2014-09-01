@@ -27,12 +27,12 @@
         Includes the main picture, the first thing seen, etc.
     -->
 
-        <div class="inverse navbar">
+        <div class="inverse navbar" stlye='position: relative; background-color: #5cbfbf;'>
             <div class="container">
                 <div class="navbar-inner">
 
                     <div class="navbar-header">
-                        <a href="index.html" class="navbar-logo">Jabb - The Premium Events Discovery App</a>
+                        <a href="index.html" class="navbar-logo">Jabb<span style='font-size: 18px;'> - The Premium Events Discovery App</span></a>
                         <button class="navbar-nav-toggle">                                    <!--I could remove these and add the same list as the below section. Maybe switch out the words for icons that were smaller or something -->
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -74,8 +74,8 @@
                                     </div>
                                     
                                     <div class="button-group" style='text-align: center; position: relative; top: 1em;'>
-                                        <a class="large primary button" href="#">Download now</a>
-                                        <a class="large hollow button " href="#content" data-smoothscroll>Learn more</a>
+                                        <a class="large primary button" href="#">Back us on Kickstarter!</a>
+                                       <a class="large hollow button " href="#content" data-smoothscroll>Learn more</a>
                                     </div>
                                 </div>
                               
@@ -123,8 +123,8 @@
                         <h1 class="section-title" >
                             Find Events Near You
                             <small>
-                                Simple, effective and easy to navigate, Jabb has<br class="hidden-on-phones">
-                                everyting you need to find something to do
+                                With our patent pending platform, You'll be able to<br class="hidden-on-phones">
+                                find, and host, quality events with ease
                             </small>
                         </h1>
 
@@ -229,30 +229,30 @@
                             <div class="description grid">
                                 <div class="tablet-6 desktop-4">
                                     <div class="description object" style='text-align:center;'>
-                                        <a href='http://www.jabblabs.com/about-us/aj'><img src='assets/img/AJ.jpg' class='img-responsive circle' alt='AJ Silber' /></a>
+                                        <a href='http://www.jabblabs.com/about-us/aj'><img src='assets/img/aj.jpeg' class='img-responsive circle' alt='AJ Silber' /></a>
                                         <h5>AJ Silber</h5>
-                                        CEO
+                                        Co-Founder & CEO
                                     </div>
                                 </div>
                                 <div class="tablet-6 desktop-4">
                                     <div class="description object" style='text-align: center;'>
                                         <a href='http://www.jabblabs.com/about-us/braden'><img src='assets/img/braden.jpg' class='img-responsive circle' alt='Braden Ericson' /></a>
                                         <h5>Braden Ericson</h5> 
-                                        CTO
+                                        Co-Founder & Chief Web Officer
                                     </div>
                                 </div>
                                 <div class="tablet-6 desktop-4">
                                     <div class="description object" style='text-align: center;'>
                                          <a href='http://www.jabblabs.com/about-us/broderick'><img src='assets/img/broderick.jpe' class='img-responsive circle' alt='Broderick Carlin' /></a>
                                         <h5>Broderick Carlin</h5>
-                                        Lead Mobile Developer
+                                        Co-Founder & Chief Mobile Officer
                                     </div>
                                 </div>
                                 <div class="tablet-6 desktop-4">
                                     <div class="description object" style='text-align: center;'>
-                                        <a href='http://www.jabblabs.com/about-us/justy'><img src='assets/img/justy.jpe' class='img-responsive circle' alt='Justy Nusbaum' /></a>
+                                        <a href='http://www.jabblabs.com/about-us/justy'><img src='assets/img/justy.jpeg' class='img-responsive circle' alt='Justy Nusbaum' /></a>
                                         <h5>Justy Nusbaum</h5>
-                                       Head of Design
+                                       Co-Founder & Head of Design
                                     </div>
                                 </div>
                                 <div class="tablet-6 desktop-4">
@@ -273,6 +273,7 @@
 
                     </div><!-- .container -->
                 </div><!-- .section -->
+
 <!-- testimonials will go here. Before uncommenting, DO NOT FORGET TO ADD END COMMENTS TO END ELEMENTS COMMENTS
                 <div class="section">
                     <div class="container">
@@ -312,22 +313,48 @@
                 <div class="footer">
                     <div class="container">
                         
-                        <div class="vertically-centered justified grid">
+                       <!-- <div class="vertically-centered justified grid">
 
                             <div class="small margin">
                                 <h5>
-                                    Start finding events!
-                                    <small>Download Jabb for iOS</small>
+                                    <!--Start finding events!
+                                    <small>Download Jabb for iOS</small>-->
+                  <!--                  Help us make Jabb a reality!
+                                    <small>Back us on Kickstarter to get exclusive backer benefits.</small>
                                 </h5>
                             </div>
 
                             <div class="small margin">
-                                <a class="large primary button" href="#">Download now</a>
+                                <a class="large primary button contact-toggle" href="#">Back us on Kickstarter</a>
                             </div>
-
+                            
                         </div><!-- .grid -->
+
+                        <div class='vertically-centered justified grid'>
+                            <div class="small margin">
+                                <h5>
+                                    <!--Start finding events!
+                                    <small>Download Jabb for iOS</small>-->
+                                    Join our Distribution List!
+                                    <small>Subscribe to our newsletter to stay updated on our progress.</small>
+                                </h5>
+                           
+                               <form class="subscription-form">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input class="large input" name="email" type="text" placeholder="Your email address">
+                                            <span class="input-group-button">
+                                                <button class="large primary button" type="submit" data-loading-text="Hold on...">Subscribe</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
                         <div class='small'>
-                            Are you a business looking to host events on our platform? Click here
+                            Are you a business looking to host events on our platform?<a href='http://www.jabblabs.com/contact-us' style='border-bottom: 0;'> Ask us about our beta program!</a>
                         </div>
 
                         <hr>
@@ -342,7 +369,6 @@
                                 <a href="http://twitter.com/jabbapp" class="icon-social-twitter"></a>
                                 <a href="http://facebook.com/jabbapp" class="icon-social-facebook"></a>
                                 <a href="http://instagram.com/jabbapp" class="icon-social-instagram"></a>
-                                <a href="http://plus.google.com" class="icon-social-google"></a>
                             </div>
 
                         </div><!-- .grid -->
@@ -353,16 +379,19 @@
             </div><!-- .content-inner-wrapper -->
         </div><!-- .content-wrapper -->
 
-        <!-- Contact form 
+        <!--
         <div class="contact-wrapper">
             <button type="button" class="close contact-toggle" aria-hidden="true">&times;</button>
+            
             <div class="contact-form-container">
+            <div class='contact-logo'><img src='assets/img/jabblogowhitexs.png' alt='Jabb' /></div>
+            <div style='text-align: center; margin-top: 8px; margin-bottom: 8px;'>Join our distribution list to stay updated on our progress!</div>
                 <form class="contact-form">
                     <div class="form-group">
                         <input id="contact-email" class="input" name="email" type="email" placeholder="Your email">
                     </div>
                     <div class="form-group">
-                        <textarea id="contact-message" class="input" name="message" placeholder="Your message" rows="5"></textarea>
+                        <textarea id="contact-message" class="input" name="message" placeholder="Optional: Let us know what you think of Jabb, your feedback is invaluable to us!" rows="5"></textarea>
                     </div>
                     <button type="submit" class="primary button" data-loading-text="Sending...">Send</button>
                 </form>
