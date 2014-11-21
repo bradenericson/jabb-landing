@@ -1,0 +1,51 @@
+<div class="row" style="margin-left: 8px; padding-right: 8px"> <div class="col-md-4"> <h4>Event Name</h4> <input ng-model="newEvent.name" class="form-control" placeholder="enter the name of your event"> <h4>Event Type</h4> <select ng-model="newEvent.type" class="form-control"> <option value="party">Party <option value="type2">type2 <option value="type3">type3 <option value="typ4">type4 </select> <h4>Date</h4> <input ng-model="newEvent.date" class="form-control" placeholder="MM/DD/YYYY"> <h4>Start Time</h4> <input ng-model="newEvent.stime" class="form-control" placeholder="--:-- --"> <h4>End Time</h4> <input ng-model="newEvent.etime" class="form-control" placeholder="--:-- --"> <h4>Image Upload</h4> <button class="btn btn-default">Choose File</button> <h4>Description</h4> <textarea ng-model="newEvent.description" class="form-control" placeholder="Add a description for your event">
+        </div>
+
+        <div class="col-md-4">
+            <h4>Event Location</h4>
+            <input ng-model="newEvent.locationName" class="form-control" placeholder="The name of the Venue's Location">
+
+            <h4>Event Address</h4>
+            <input ng-model="newEvent.address[0]" class="form-control" placeholder="Address Line 1">
+            <input ng-model="newEvent.address[1]" class="form-control" placeholder="Address Line 2">
+            <input ng-model="newEvent.city" class="form-control" placeholder="City, state, zip">
+
+            <h4>Age Restrictions</h4>
+            <div ng-model="newEvent.restrictions" class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default">None</button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default">18+</button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default">21+</button>
+                </div>
+            </div>
+
+            <h4>Contact Info</h4>
+            <input ng-model="newEvent.contactName" class="form-control" placeholder="**User Name** (Type here to change)">
+            <input ng-model="newEvent.contactInfo" class="form-control" placeholder="(email, website, phone)">
+            *something special here
+            <br>
+
+            <div class="checkbox">
+                    <input ng-model="newEvent.fb" type="checkbox"> Post event to Facebook?
+            </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="col-md-4">
+            Your Preview Here
+            <hr>
+            <app-preview></app-preview>
+
+            <button type="submit" class="btn btn-default" ng-click="addEvent(newEvent)">Submit</button>
+
+        </div>
+    </div>

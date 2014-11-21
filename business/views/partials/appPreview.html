@@ -1,0 +1,13 @@
+<!--<div style='width: 50%; border: 1px solid blue;'>
+    <div style='position: relative;' >
+
+            <h3>{{newEvent.name}}</h3>
+
+        <h4>{{newEvent.type}}</h4>
+
+        <h5>{{newEvent.description}}</h5>
+
+
+    </div>
+    <!--<img src='img/iphone5_clear.png' class='img-responsive' />
+</div>--> <div style="width: 100%; margin: 0 auto"> <div style="position: relative; border: 1px solid rgb(227,227,227); max-width: 300px"> <!-- picture & title of the event --> <div class="preview-main"> <div class="preview-header"> <span class="glyphicon glyphicon-heart" style="display: inline-block; float: right; margin-right: 15px"></span> <span class="glyphicon glyphicon-list" style="display: inline-block; margin-left: 15px"></span> </div> <img src="images/concert.jpg" class="preview-image blur"> <div style="margin: 0 auto; text-align: center"> <img src="images/barwhite.png" height="50" width="50"><br> <span style="font-size: 38px">{{newEvent.name}}</span><br> <span style="font-size: 25px">{{newEvent.date}}</span> <!-- july seventeenth --> </div> <div class="preview-footer"><span style="display: inline-block; float: right; margin-right: 15px">21 days</span><span style="display: inline-block; margin-left: 15px">7 miles</span> </div> </div> <!-- details of the event --> <!-- time and date --> <div style="width: 100%"> <img src="images/icon.png" class="preview-icon"> <div class="preview-details"><span class="preview-details-1">{{newEvent.stime}} - {{newEvent.etime}}</span><br> <span class="preview-details-2">{{newEvent.date}}</span></div> <!-- SUN, JULY 17TH, 2014--> </div> <!-- Location & address --> <div style="width: 100%"> <img src="images/icon.png" class="preview-icon"> <div class="preview-details"><span class="preview-details-1">{{newEvent.locationName}}</span><br> <span class="preview-details-2">{{newEvent.address[0]}}, {{newEvent.city.toUpperCase()}}</span></div> <!-- St. CLOUD, MN --> </div> <!-- company contact info --> <div style="width: 100%"> <img src="images/icon.png" class="preview-icon"> <div class="preview-details"><span class="preview-details-1">{{newEvent.contactName}}</span><br> <span class="preview-details-2">{{newEvent.contactInfo.toUpperCase()}}</span></div> </div> <!-- the description --> <div style="width: 100%"> <img src="images/icon.png" class="preview-icon"> <div class="preview-details"><span class="preview-details-1">Info</span><br> <span class="preview-details-2">{{newEvent.description}}</span></div> </div> </div> <!--<img src='img/iphone5_clear.png' class='preview-phone'/>--> </div>
