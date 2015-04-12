@@ -1069,7 +1069,6 @@ img.centered {
 }
 
 .navbar-inner {
-    border-bottom: 1px solid rgba(139, 153, 165, 0.2);
     padding: 20px 0;
     -webkit-transition: border-bottom-color 0.2s ease-in-out, padding 0.2s ease-in-out;
     transition: border-bottom-color 0.2s ease-in-out, padding 0.2s ease-in-out;
@@ -1782,4 +1781,60 @@ body {
 .social-likes__button_plusone {
     background-color: #dd4b39;
     color: #fff;
+}
+
+ 
+.object img {
+	display: block;
+	height: 300px;
+	width: 300px;
+}
+ 
+.object figure {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	margin: 0;
+}
+ 
+.object figcaption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+ 
+.object div p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	vertical-align: middle;
+}
+
+.object:hover figcaption {
+	opacity: 1;
+}
+
+figcaption p {
+	display: table-cell;
+	font-size: 1em;
+	position: relative;
+	top: -20px;
+	width: 289px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	vertical-align: middle;
+}
+ 
+.object:hover figcaption p {
+	-moz-transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
 }

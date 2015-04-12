@@ -26,10 +26,6 @@ $( document ).ready( function() {
         $( 'body' ).toggleClass( 'open' );
     } );
 
-    // Detect fixed navbar position
-    // --------------------------------------------------
-    fixedTopBar();
-
     // Initialize scrollReveal animations
     // --------------------------------------------------
     window.scrollReveal = new scrollReveal();
@@ -74,31 +70,6 @@ $( window ).on( 'load', function() {
         } );
     } );
 } );
-
-
-//
-// Add "scrolling" class to the navbar when not at top
-// --------------------------------------------------
-
-function fixedTopBar() {
-
-    'use strict';
-
-    var offset,
-        $navbar = $( '.navbar' );
-
-    $( window ).on( 'scroll.happytodesign', function() {
-        offset = $navbar.offset().top;
-        if ( offset > 10 ) {
-            if ( $navbar.attr( 'data-scrolling' ) !== 'true' ) {
-                $navbar.attr( 'data-scrolling', 'true' );
-            }
-        }
-        else {
-            $navbar.attr( 'data-scrolling', 'false' );
-        }
-    } ).trigger( 'scroll.happytodesign' );
-}
 
 
 //
