@@ -560,6 +560,12 @@ blockquote {
     border-color: #99a6b0;
 }
 
+.button:focus,
+.button:hover download {
+    background-color: #5cbfbf;
+    border-color: #5cbfbf;
+}
+
 .button.hollow {
     color: #8b99a5
 }
@@ -1780,6 +1786,21 @@ body {
 
 .social-likes__button_plusone {
     background-color: #dd4b39;
+    color: #fff;
+}
+
+.social-likes__button_iOSDownload {
+    background-color: #5bcaff;
+    color: #fff;
+}
+
+.social-likes__button_androidDownload {
+    background-color: #4cd964;
+    color: #fff;
+}
+
+.social-likes__button_blog {
+    background-color: #ff3b30;
     color: #fff;
 }
 
